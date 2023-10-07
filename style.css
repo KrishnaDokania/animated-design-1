@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Fira+Sans&family=Libre+Baskerville&family=Roboto+Slab&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+overflow-x: hidden;
+background-color: #000000;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.navbar{
+    padding: 5px 10px;
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    width:100%;
+    font-family:'Ubuntu', serif;
+    justify-content: space-between;
+   
+}
+.navbar h2{
+    color: #5e5c5c;
+    font-size: 20px;
+    margin: 20px 50px;
+}
+.navbar ul{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0 40px;
+
+ 
+}
+.navbar ul li{
+list-style: none;
+font-size: 14px;
+color: #8f8484;
+padding:0 20px;
+
+
+}
+.navbar ul li:hover{
+    color: #d3cccc;
+    font-size: 14px;
+    font-weight: 600;
+    pointer-events:auto;
+    cursor: pointer;
+}
+.navbar ul li:active{
+    color: #d3cccc;
+    font-size: 15px;
+    font-weight: 600;
+    pointer-events:auto;
+}
+#main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    
+}
+
+#main::before{
+    content:'';
+    position: absolute;
+    background-size: cover;
+    background-image: url(su-san-lee-E_eWwM29wfU-unsplash.jpg);
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    pointer-events: none;
+
+}
+
+h5{
+    color: #252525;
+font-family: 'ubuntu';
+font-weight: 100;
+opacity: 1;
+font-size: 15px;
+}
+#wrap{
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-image: url(su-san-lee-E_eWwM29wfU-unsplash.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#wrap h1{
+    font-size: 350px;
+    font-family:'Roboto Slab', serif;
+    font-weight: 700;
+    color: #fff;
+}
+#white{
+    position: absolute;
+    top: 50%;
+    align-items: center;
+    margin-right: 15%;
+    right: 0;
+    transform: translate(0,-15%);
+    display: flex;
+    border-radius: 50px;
+    width:36%;
+    padding: 0px 15px;
+    height: 126px;
+    background-color :#000000;
+    color: #fff;
+    opacity: 0.8;
+}
+#see{
+display: block;
+opacity: 0;
+}
+
+#blackbox{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    background-image: url(su-san-lee-E_eWwM29wfU-unsplash.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin:0 40px;
+    text-align: center;
+
+}
+#blackbox p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 10px;
+   
+}
+#more{
+    display: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+
+}
+
+.line{
+    width:30px;
+    height:1px;
+    margin: 0px 20px;
+    background-color:#fff;
+}
+.detail h4{
+    font-family:'Roboto Slab', serif;
+    font-size: 12px;
+}
+#main>h4{
+    color:rgb(55, 55, 55);
+    font-family:'Ubuntu', serif;
+    position: absolute;
+    font-size: 10px;
+    top: 70%;
+    letter-spacing: 15px;
+    left: 50%;
+    font-weight: 700;
+    text-transform: uppercase;
+    }
